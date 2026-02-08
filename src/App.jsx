@@ -1,15 +1,17 @@
+import React, { Suspense } from 'react';
 import { BrowserRouter } from "react-router-dom";
 import {
-  About,
-  Contact,
-  Experience,
-  Feedbacks,
+  LazyHero as Hero,
+  LazyAbout as About,
+  LazyTech as Tech,
+  LazyExperience as Experience,
+  LazyWorks as Works,
+  LazyFeedbacks as Feedbacks,
+  LazyContact as Contact,
   Navbar,
-  Hero,
-  Tech,
-  Works,
   StarsCanvas,
-} from "./components";
+} from './components';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -17,17 +19,22 @@ const App = () => {
       <div className='relative z-0 bg-primary'>
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Navbar />
-          <Hero />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Hero />
+          </Suspense>
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className='relative z-0'>
+        <Suspense fallback={<div>Loading...</div>}>
+          <About />
+          <Experience />
+          <Tech />
+          <Works />
+          <Feedbacks />
           <Contact />
+        </Suspense>
+        <div className='relative z-0'>
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

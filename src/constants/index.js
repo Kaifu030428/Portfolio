@@ -198,67 +198,28 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      name: "Snake Game",
+      description: "A classic Snake Game built with HTML, CSS, and JavaScript. Features score tracking and responsive controls.",
       tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
+        { name: "JavaScript", color: "text-yellow-500" },
+        { name: "HTML", color: "text-red-500" },
+        { name: "CSS", color: "text-blue-500" }
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: "/src/assets/snake-game.png", // Corrected the image path
+      source_code_link: "https://github.com/Kaifu030428/SnakeGame", // Updated GitHub repository link
+      live_demo_link: "https://kaifu030428.github.io/SnakeGame/" // Updated live demo link
     },
     {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      name: "Dog Studio Clone",
+      description: "A clone of the Dog Studio website, showcasing advanced animations and modern web design techniques using GSAP and Three.js.",
       tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
+        { name: "GSAP", color: "text-green-500" },
+        { name: "Three.js", color: "text-blue-500" },
+        { name: "JavaScript", color: "text-yellow-500" }
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: "/src/assets/dog-studio-clone.png", // Add an image for the Dog Studio Clone project
+      source_code_link: "https://github.com/Kaifu030428/Dog-Studio-Clone", // GitHub repository link
+      live_demo_link: "https://dog-studio-clone-orpin.vercel.app/" // Updated live demo link
     },
   ];
   

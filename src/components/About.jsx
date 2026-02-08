@@ -1,4 +1,3 @@
-
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
@@ -9,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-px rounded-[20px] shadow-card'
@@ -25,10 +24,10 @@ const ServiceCard = ({ index, title, icon }) => (
         <img
           src={icon}
           alt='web-development'
-          className='w-16 h-16 object-contain'
+          className='w-20 h-20 object-contain'
         />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className='text-white text-[24px] font-bold text-center'>
           {title}
         </h3>
       </div>
@@ -39,13 +38,15 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} initial='hidden' animate='show'>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
+        initial='hidden'
+        animate='show'
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         I’m a passionate full-stack developer from Bhopal with strong experience in JavaScript, React, and Node.js. I love building efficient, scalable, and user-friendly web applications with clean architecture and great performance.
@@ -55,7 +56,14 @@ While I enjoy working on the front end, my real interest lies in the backend —
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <motion.div
+            key={service.title}
+            variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
+            initial='hidden'
+            animate='show'
+          >
+            <ServiceCard index={index} {...service} />
+          </motion.div>
         ))}
       </div>
     </>
