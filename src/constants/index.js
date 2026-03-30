@@ -172,7 +172,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+        "I thought it was impossible to make a website as beautiful as our product, but Kaif proved me wrong.",
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
@@ -180,7 +180,7 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        "I've never met a web developer who truly cares about their clients' success like Kaif does.",
       name: "Chris Brown",
       designation: "COO",
       company: "DEF Corp",
@@ -188,7 +188,7 @@ import {
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "After Kaif optimized our website, our traffic increased by 50%. We can't thank them enough!",
       name: "Lisa Wang",
       designation: "CTO",
       company: "456 Enterprises",
@@ -205,7 +205,7 @@ import {
         { name: "HTML", color: "text-red-500" },
         { name: "CSS", color: "text-blue-500" }
       ],
-      image: "/src/assets/snake-game.png", // Corrected the image path
+      image: "https://images.unsplash.com/photo-1731909037862-192471e6ea21?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c25ha2UlMjBnYW1lfGVufDB8fDB8fHww", // Corrected the image path
       source_code_link: "https://github.com/Kaifu030428/SnakeGame", // Updated GitHub repository link
       live_demo_link: "https://kaifu030428.github.io/SnakeGame/" // Updated live demo link
     },
@@ -217,7 +217,7 @@ import {
         { name: "Three.js", color: "text-blue-500" },
         { name: "JavaScript", color: "text-yellow-500" }
       ],
-      image: "/src/assets/dog-studio-clone.png", // Add an image for the Dog Studio Clone project
+      image: "https://images.unsplash.com/photo-1698773995422-5834a7b89e12?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fDNkJTIwZG9nJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D", // Add an image for the Dog Studio Clone project
       source_code_link: "https://github.com/Kaifu030428/Dog-Studio-Clone", // GitHub repository link
       live_demo_link: "https://dog-studio-clone-orpin.vercel.app/" // Updated live demo link
     },
